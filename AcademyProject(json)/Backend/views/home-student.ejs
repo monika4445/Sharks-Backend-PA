@@ -1,0 +1,19 @@
+<% if(typeof teachers !== 'undefined') { %>
+    <section class="main">
+        <div class="classes-box">
+            <% teachers.forEach((teacher) => { %>
+                <a href="/classes/<% teacher.id %>" class="card">
+                    <div class="card-box">
+                        <div class="image-block">
+                            <img width="100%" src="/uploads/<%= teacher.image_name %>" alt="">
+                        </div>
+                        <h2 class="card-title"><% teacher.name %></h2>
+                        <div>
+
+                        </div>
+                    </div>
+                </a>
+            <% }) %>
+        </div>
+    </section>
+<% } %>

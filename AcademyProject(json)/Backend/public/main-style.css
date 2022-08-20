@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li.navbar-li {
+    float: left;
+}
+
+li.navbar-li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.navbar-li a:hover {
+    background-color: #111;
+}
+
+li.navbar-li.user-about-li {
+    float: right;
+    display: block;
+    padding: 0 20px;
+}
+.user-about {
+    line-height: 45px;
+    font-size: 20px;
+    color: cadetblue;
+    font-weight: bold;
+    margin: 0 10px
+}
+
+.user-activity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li.navbar-li a.active {
+    border-bottom: solid 5px lightseagreen;
+}

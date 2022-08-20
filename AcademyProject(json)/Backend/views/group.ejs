@@ -1,0 +1,29 @@
+<section class="main" style="background: gray; padding: 20px">
+    <h2>Group  <%= group.teacher.name %></h2>
+    <form action="/app/groups/<%= group.id %>/students" method="post" style="margin-bottom: 20px">
+        <div class="input-block">
+            <input id="group_id" type="hidden" name="group_id" value="<%= group.id %>">
+        </div>
+        <div class="input-block">
+            <label for="teacher_id">Students</label>
+            <select name="teacher_id" id="teacher_id">
+                <% students.forEach((student) => { %>
+                    <option value="<%= student.id %>"><%= student.name %></option>
+                <% }) %>
+            </select>
+        </div>
+        <div class="input-block">
+            <input class="submit-button" type="submit">
+        </div>
+    </form>
+</section>
+
+<% if (typeof groupStudents !== 'undefined') { %>
+    <div>
+        <ul>
+            <% groupStudents.forEach((groupStudent) => { %>
+                <li style="border: solid 1px green"><%= groupStudent.student.name %></li>
+            <% }) %>
+        </ul>
+    </div>
+<% } %>

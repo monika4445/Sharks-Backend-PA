@@ -1,0 +1,48 @@
+<section class="main">
+    <form action="/auth/register" enctype="multipart/form-data" method="post">
+    <div class="input-block">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email">
+    </div>
+    <div class="input-block">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name">
+    </div>
+    <div class="input-block">
+        <label for="lastname">Lastname</label>
+        <input id="lastname" type="text" name="lastname">
+    </div>
+    <div class="input-block">
+        <label for="age">Age</label>
+        <input id="age" type="number" name="age">
+    </div>
+    <div class="input-block">
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password">
+    </div>
+    <div class="input-block">
+        <label for="role">Role</label>
+        <select name="role" id="role">
+            <option value="0">Admin</option>
+            <option value="1">Teacher</option>
+            <option value="2">Student</option>
+        </select>
+    </div>
+    <div class="input-block">
+        <label for="avatar">Avatar</label>
+        <input id="avatar" type="file" name="avatar">
+    </div>
+    <div class="input-block">
+        <input class="submit-button" type="submit">
+    </div>
+</form>
+<%
+    if(typeof errors !== 'undefined'){
+        errors.forEach((error) => {
+%>
+    <div style="color: red;"><%= error %></div>
+<%
+        })
+    }
+%>
+</section>

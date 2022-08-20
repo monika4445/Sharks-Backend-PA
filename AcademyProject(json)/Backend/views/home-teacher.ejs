@@ -1,0 +1,13 @@
+<% if (typeof groups !== 'undefined') { %>
+    <section class="main">
+        <div class="classes-box">
+            <% groups.forEach((group) => { %>
+                <a href="/groups/<% group.id %>" class="card">
+                    <div class="card-box">
+                        <h2 class="card-title"><% group.name %></h2>
+                    </div>
+                </a>
+            <% }) %>
+        </div>
+    </section>
+<% } %>

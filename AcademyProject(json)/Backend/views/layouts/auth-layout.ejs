@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/auth-style.css">
+</head>
+<body>
+<ul class="navbar">
+    <li class="navbar-li">
+        <a href="/auth/login" class="<%= typeof page_tab !== 'undefined' && page_tab === 'login' ? 'active' : ''%>">Sign In</a>
+    </li>
+    <li class="navbar-li">
+        <a href="/auth/register" class="<%= typeof page_tab !== 'undefined' && page_tab === 'register' ? 'active' : ''%>">Sign Up</a>
+    </li>
+</ul>
+
+<%- body %>
+
+</body>
+</html>

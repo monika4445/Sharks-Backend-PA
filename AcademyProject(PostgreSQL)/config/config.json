@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "monika",
+    "password": "insomnia.901",
+    "database": "academy",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "monika",
+    "password": "insomnia.901",
+    "database": "academy",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "monika",
+    "password": "insomnia.901",
+    "database": "academy",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

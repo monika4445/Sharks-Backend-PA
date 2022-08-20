@@ -1,0 +1,5 @@
+[
+  {"age":28,"name":"Gevorg","lastname":"Aghakhanyan","email":"qwe@gmail.com","password":"$2b$10$BOI889xjdFp/efK1qXFdwOxcu7Co/OCax9.S6mGK0wSFMWX53X6Ki","role":1,"image_name":"qwe@gmail.com_1655830429058.webp","id":1},
+  {"age":20,"name":"student","lastname":"student","email":"student@gmail.com","password":"$2b$10$NhDS5Nc3g3U/PQQlVukMnewkt2WiFPZ6ooCMABBunABeRP8yuvo82","role":2,"image_name":"student@gmail.com_1656156772553.webp","id":2},
+  {"age":20,"name":"admin","lastname":"admin","email":"admin@gmail.com","password":"$2b$10$NhDS5Nc3g3U/PQQlVukMnewkt2WiFPZ6ooCMABBunABeRP8yuvo82","role":0,"image_name":"admin@gmail.com_1656156772553.webp","id":3}
+]

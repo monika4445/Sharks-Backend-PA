@@ -1,0 +1,123 @@
+
+body {
+/*    background-color: rgb(119, 119, 119);*/
+    background-image: url(img/m.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(77,77,77,0.6);
+    height: 80px;
+    z-index: 999px;
+  
+    
+}
+header .container .block {
+    margin: 0 auto;
+    width: 1000px;
+    padding-top: 9px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .container .block .div_img img {
+    width: 63px;
+    height: 63px;
+}
+
+header .container .block ul {
+    display: flex;
+    padding: 0;
+}
+
+header .container .block ul li {
+    display: flex;
+}
+
+header .container .block ul li a{
+    margin: 0 50px;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+header .container .block ul li a:hover {
+    color:gold;
+}
+
+
+
+header .container .block .div_imgg {
+    margin-left: 200px;
+}
+
+header .container .block .div_imgg img {
+    width: 45px;
+    padding-top: 10px;
+   
+}
+
+section {
+    font-family: sans-serif;
+}
+section .block {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+section .block_2 {
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+section .glob_div {
+    display: flex;
+    color: white;
+    width: 300px;
+    margin-top: 50px
+}
+section .glob_div .text:hover{
+    color:gold;
+    cursor: pointer;
+}
+section .glob_div img{
+     border: 2px solid rgb(77,77,77); 
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+section .glob_div img:hover{
+   border: 2px solid gold;
+}
+section .text{
+    text-align: center;
+}
+section .info button {
+    width: 37px;
+    height: 21px;
+    padding: 0;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-family: monospace;
+    background-color: rgb(70, 70, 71);
+    cursor: pointer;
+}
+section .info button:hover{
+    color: gold;
+}
+section .info button .sim{
+    color: greenyellow;
+}
